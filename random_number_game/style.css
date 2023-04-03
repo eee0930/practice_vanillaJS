@@ -1,0 +1,27 @@
+.input-style {
+  border: solid 2px #bdbdbd;
+  border-radius: 8px;
+  font-size: 15px;
+  padding: 5px 8px;
+}
+.btn-style {
+  border: none;
+  border-radius: 8px;
+  background-color: blueviolet;
+  color: #fff;
+  font-size: 15px;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+.warning {
+  border-color: rgb(206, 78, 78);
+}
+.container {
+  font-size: 14px;
+  padding: 5px 0;
+}
+.container .result {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 15px;
+}

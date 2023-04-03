@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vanilla Challenge</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div>
+      <h1>Random Number Game</h1>
+      <div>
+        <form>
+          <div class="container">
+            <label for="genNum">Generate a number between 0 to </label>
+            <input
+              type="number"
+              id="genNum"
+              class="input-style"
+              min="1"
+              required
+            />
+          </div>
+          <div class="container">
+            <label for="guessNum">Guess the number : </label>
+            <input
+              type="number"
+              id="playNum"
+              class="input-style"
+              min="0"
+              required
+            />
+            <button id="playBtn" class="btn-style">Play!</button>
+          </div>
+        </form>
+      </div>
+      <div id="resultContainer" class="container">
+        <div></div>
+        <div class="result"></div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 const clockTitle = document.querySelector(".js-clock");
-const XMAS_MONTH = 11;
+const XMAS_MONTH = 11; // Date는 실제 month보다 1 작은 결과가 나오므로
 const XMAS_DATE = 24;
 
 function getDdayChristmas() {
@@ -21,5 +21,5 @@ function getDdayChristmas() {
     ${String(dDaySecond).padStart(2, "0")}s`;
 }
 
-getDdayChristmas();
+getDdayChristmas(); // time setting
 setInterval(getDdayChristmas, 1000);

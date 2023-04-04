@@ -24,10 +24,12 @@ const changeBgColors = () => {
   const color1 = Math.floor(Math.random() * colors.length);
   let color2 = Math.floor(Math.random() * colors.length);
   if (color1 === color2) {
-    color2 = color2 === colors.length - 1 ? color2 - 1 : color2 + 1;
+    color2 = (color2 === colors.length - 1) ? color2 - 1 : color2 + 1;
   }
-  document.body.style.background = `linear-gradient(
-    ${colors[color1]}, ${colors[color2]})`;
+  document.body.style.background = 
+    `linear-gradient(
+      ${colors[color1]}, ${colors[color2]}
+    )`;
 };
 
 bgBtn.addEventListener("click", changeBgColors);
